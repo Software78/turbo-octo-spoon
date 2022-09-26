@@ -1,7 +1,8 @@
-import 'package:exercise/screen/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
+import 'custom_text.dart';
 
 class HistoryTile extends StatefulWidget {
   const HistoryTile({Key? key}) : super(key: key);
@@ -38,11 +39,11 @@ class _HistoryTileState extends State<HistoryTile> {
               child: Row(
                 children: [
                   CustomText(
-                      weight: FontWeight.w400,
+                      fontWeight: FontWeight.w400,
                       text: "OTC-363-22573378487015320",
-                      size: 14.sp,
+                      fontSize: 14.sp,
                       color: const Color(0xff54565b),
-                      align: TextAlign.center),
+                      textAlign: TextAlign.center),
                   SizedBox(
                     width: 12.w,
                   ),
@@ -63,11 +64,11 @@ class _HistoryTileState extends State<HistoryTile> {
                                   topLeft: Radius.circular(4),
                                   bottomLeft: Radius.circular(4))),
                           child: CustomText(
-                              weight: FontWeight.w700,
+                              fontWeight: FontWeight.w700,
                               text: 'MAIZE',
-                              size: 8.sp,
+                              fontSize: 8.sp,
                               color: Colors.white,
-                              align: TextAlign.center),
+                              textAlign: TextAlign.center),
                         ),
                         Container(
                           alignment: Alignment.center,
@@ -79,11 +80,11 @@ class _HistoryTileState extends State<HistoryTile> {
                                   topRight: Radius.circular(4.r),
                                   bottomRight: Radius.circular(4.r))),
                           child: CustomText(
-                              weight: FontWeight.w700,
+                              fontWeight: FontWeight.w700,
                               text: '33 MT',
-                              size: 8.sp,
+                              fontSize: 8.sp,
                               color: Colors.white,
-                              align: TextAlign.center),
+                              textAlign: TextAlign.center),
                         )
                       ],
                     ),
@@ -116,11 +117,11 @@ class _HistoryTileState extends State<HistoryTile> {
                     width: 4.w,
                   ),
                   CustomText(
-                    weight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,
                     text: "Hybrid",
-                    size: 12.sp,
+                    fontSize: 12.sp,
                     color: const Color(0xff7c827d),
-                    align: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                   SizedBox(
                     width: 8.5.w,
@@ -150,11 +151,11 @@ class _HistoryTileState extends State<HistoryTile> {
                     width: 4.w,
                   ),
                   CustomText(
-                    weight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,
                     text: "Dangote",
-                    size: 12.sp,
+                    fontSize: 12.sp,
                     color: const Color(0xff7c827d),
-                    align: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),
@@ -194,21 +195,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "logistics",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "ABC Transport Ltd",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -219,21 +220,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "truck-num",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "CGE - 123XYZ",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -244,21 +245,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "num-bags",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "300",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -273,21 +274,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "driver",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "Aminu Amusat",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -298,21 +299,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "driver-num",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "07034524534",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -357,21 +358,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "Logistics Company",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "ABC Transport Ltd",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -382,21 +383,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "Truck No:",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "CGE - 123XYZ",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -407,21 +408,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "No. of bags",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "300",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -436,21 +437,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "Driver",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "Aminu Amusat",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -461,21 +462,21 @@ class _HistoryTileState extends State<HistoryTile> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "Driver's No.",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "07034524534",
-                                  size: 10.sp,
+                                  fontSize: 10.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -506,19 +507,19 @@ class _HistoryTileState extends State<HistoryTile> {
                   child: Row(
                     children: [
                       CustomText(
-                        weight: FontWeight.w400,
+                        fontWeight: FontWeight.w400,
                         text: "TUE 12 JAN, 2021 10:00AM",
-                        size: 8.sp,
+                        fontSize: 8.sp,
                         color: Colors.white,
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                       ),
                       const Spacer(),
                       CustomText(
-                        weight: FontWeight.w400,
+                        fontWeight: FontWeight.w400,
                         text: "ID: OTC-363-22573378487015320",
-                        size: 8.sp,
+                        fontSize: 8.sp,
                         color: Colors.white,
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                       ),
                     ],
                   ),

@@ -7,7 +7,7 @@ class CustomText extends StatelessWidget {
     super.key,
     required this.text,
     this.fontSize,
-    this.fontWeight,
+    this.fontWeight ,
     this.color,
     this.fontStyle,
     this.textDecoration,
@@ -30,7 +30,7 @@ class CustomText extends StatelessWidget {
       style: GoogleFonts.mulish(
         textStyle: TextStyle(
             fontSize: fontSize,
-            fontWeight: fontWeight,
+            fontWeight:  fontWeight ,
             color: color,
             fontStyle: fontStyle,
             decoration: textDecoration),

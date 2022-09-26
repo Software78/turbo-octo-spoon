@@ -1,11 +1,12 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:exercise/screen/controller/drawer.dart';
-import 'package:exercise/screen/view/stateless_view.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
-import 'package:exercise/screen/widget/history_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../mvc/mvc.dart';
+import '../../widgets/custom_text.dart';
+import '../../widgets/history_tile.dart';
 
 class HistoryPage extends StatelessView<DrawerChecks, DrawerChecksController> {
   const HistoryPage(DrawerChecksController state, {Key? key})
@@ -71,10 +72,10 @@ class HistoryPage extends StatelessView<DrawerChecks, DrawerChecksController> {
                       ),
                       CustomText(
                         text: 'delivery-history',
-                        weight: FontWeight.w700,
-                        size: 14.sp,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14.sp,
                         color: Colors.white,
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                       )
                     ],
                   ),

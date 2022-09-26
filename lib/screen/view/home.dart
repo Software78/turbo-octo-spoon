@@ -1,13 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:exercise/screen/controller/dispatch.dart';
 import 'package:exercise/screen/controller/home.dart';
-import 'package:exercise/screen/view/stateless_view.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
-import 'package:exercise/screen/widget/securities_info.dart';
 import 'package:exercise/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../mvc/mvc.dart';
+import '../../widgets/custom_text.dart';
+import '../../widgets/securities_info.dart';
 
 class HomeView extends StatelessView<HomeScreen, HomeController> {
   // DrawerChecksController? controllers;
@@ -127,21 +128,21 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                                             height: 6.h,
                                           ),
                                           CustomText(
-                                            weight: FontWeight.w400,
+                                            fontWeight: FontWeight.w400,
                                             text: "welcome-back",
-                                            size: 13.sp,
+                                            fontSize: 13.sp,
                                             color: Colors.white,
-                                            align: TextAlign.center,
+                                            textAlign: TextAlign.center,
                                           ),
                                           SizedBox(
                                             height: 4.h,
                                           ),
                                           CustomText(
-                                              weight: FontWeight.w700,
+                                              fontWeight: FontWeight.w700,
                                               text: "Mercy Adanna",
-                                              size: 16.sp,
+                                              fontSize: 16.sp,
                                               color: Colors.white,
-                                              align: TextAlign.center)
+                                              textAlign: TextAlign.center)
                                         ],
                                       ),
                                     ],
@@ -316,23 +317,23 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                                                             4.r),
                                                   ),
                                                   child: CustomText(
-                                                    weight: FontWeight.w600,
+                                                    fontWeight: FontWeight.w600,
                                                     text:
                                                         "${orders[index].quantity}MT of ${orders[index].ordername}",
-                                                    size: 10.sp,
+                                                    fontSize: 10.sp,
                                                     color:
                                                         const Color(0xff0089C8),
-                                                    align: TextAlign.start,
+                                                    textAlign: TextAlign.start,
                                                   ),
                                                 ),
                                                 CustomText(
-                                                  weight: FontWeight.w700,
+                                                  fontWeight: FontWeight.w700,
                                                   text: orders[index]
                                                       .deliveryType,
-                                                  size: 8.sp,
+                                                  fontSize: 8.sp,
                                                   color:
                                                       const Color(0xff0089C8),
-                                                  align: TextAlign.center,
+                                                  textAlign: TextAlign.center,
                                                 )
                                               ],
                                             ),
@@ -344,11 +345,11 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                                             padding: EdgeInsets.only(
                                                 left: 16.w, right: 16.w),
                                             child: CustomText(
-                                                weight: FontWeight.w400,
+                                                fontWeight: FontWeight.w400,
                                                 text: orders[index].unique,
-                                                size: 16.sp,
+                                                fontSize: 16.sp,
                                                 color: const Color(0xff54565B),
-                                                align: TextAlign.start),
+                                                textAlign: TextAlign.start),
                                           ),
                                           SizedBox(
                                             height: 2.h,
@@ -364,12 +365,13 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                                                   width: 2.w,
                                                 ),
                                                 CustomText(
-                                                    weight: FontWeight.w600,
+                                                    fontWeight: FontWeight.w600,
                                                     text: orders[index].seller,
-                                                    size: 10.sp,
+                                                    fontSize: 10.sp,
                                                     color:
                                                         const Color(0xff7C827D),
-                                                    align: TextAlign.center),
+                                                    textAlign:
+                                                        TextAlign.center),
                                                 SizedBox(
                                                   width: 7.w,
                                                 ),
@@ -384,12 +386,13 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                                                   width: 2.w,
                                                 ),
                                                 CustomText(
-                                                    weight: FontWeight.w600,
+                                                    fontWeight: FontWeight.w600,
                                                     text: orders[index].buyer,
-                                                    size: 10.sp,
+                                                    fontSize: 10.sp,
                                                     color:
                                                         const Color(0xff7C827D),
-                                                    align: TextAlign.center),
+                                                    textAlign:
+                                                        TextAlign.center),
                                               ],
                                             ),
                                           ),
@@ -414,19 +417,21 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                                                       .spaceBetween,
                                               children: [
                                                 CustomText(
-                                                    weight: FontWeight.w400,
+                                                    fontWeight: FontWeight.w400,
                                                     text: orders[index].time,
-                                                    size: 8.sp,
+                                                    fontSize: 8.sp,
                                                     color:
                                                         const Color(0xff8B908B),
-                                                    align: TextAlign.center),
+                                                    textAlign:
+                                                        TextAlign.center),
                                                 CustomText(
-                                                    weight: FontWeight.w400,
+                                                    fontWeight: FontWeight.w400,
                                                     text: orders[index].date,
-                                                    size: 8.sp,
+                                                    fontSize: 8.sp,
                                                     color:
                                                         const Color(0xff8B908B),
-                                                    align: TextAlign.center),
+                                                    textAlign:
+                                                        TextAlign.center),
                                               ],
                                             ),
                                           )

@@ -1,4 +1,4 @@
-import 'package:exercise/model/order.dart';
+import 'package:exercise/models/order.dart';
 
 var orders = [
   OrderModel(

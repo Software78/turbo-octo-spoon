@@ -1,8 +1,9 @@
 import 'package:exercise/screen/controller/dispatch.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
+import 'custom_text.dart';
 
 class DispatchTile extends StatelessWidget {
   final DispatchController controller;
@@ -30,11 +31,11 @@ class DispatchTile extends StatelessWidget {
               child: Row(
                 children: [
                   CustomText(
-                      weight: FontWeight.w700,
+                      fontWeight: FontWeight.w700,
                       text: "CGE - 123XYZ",
-                      size: 18.sp,
+                      fontSize: 18.sp,
                       color: const Color(0xff54565b),
-                      align: TextAlign.center),
+                      textAlign: TextAlign.center),
                   const Spacer(),
                   Container(
                     decoration:
@@ -53,11 +54,11 @@ class DispatchTile extends StatelessWidget {
                                   topLeft: Radius.circular(4),
                                   bottomLeft: Radius.circular(4))),
                           child: CustomText(
-                              weight: FontWeight.w700,
+                              fontWeight: FontWeight.w700,
                               text: 'MAIZE',
-                              size: 10.sp,
+                              fontSize: 10.sp,
                               color: Colors.white,
-                              align: TextAlign.center),
+                              textAlign: TextAlign.center),
                         ),
                         Container(
                           alignment: Alignment.center,
@@ -69,11 +70,11 @@ class DispatchTile extends StatelessWidget {
                                   topRight: Radius.circular(4.r),
                                   bottomRight: Radius.circular(4.r))),
                           child: CustomText(
-                              weight: FontWeight.w700,
+                              fontWeight: FontWeight.w700,
                               text: '33 MT',
-                              size: 10.sp,
+                              fontSize: 10.sp,
                               color: Colors.white,
-                              align: TextAlign.center),
+                              textAlign: TextAlign.center),
                         )
                       ],
                     ),
@@ -106,11 +107,11 @@ class DispatchTile extends StatelessWidget {
                     width: 4.w,
                   ),
                   CustomText(
-                    weight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,
                     text: "AFTL_Saminaka",
-                    size: 12.sp,
+                    fontSize: 12.sp,
                     color: const Color(0xff7c827d),
-                    align: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                   SizedBox(
                     width: 8.5.w,
@@ -140,11 +141,11 @@ class DispatchTile extends StatelessWidget {
                     width: 4.w,
                   ),
                   CustomText(
-                    weight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,
                     text: "Animal Care",
-                    size: 12.sp,
+                    fontSize: 12.sp,
                     color: const Color(0xff7c827d),
-                    align: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),
@@ -184,21 +185,21 @@ class DispatchTile extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CustomText(
-                                  weight: FontWeight.w400,
+                                  fontWeight: FontWeight.w400,
                                   text: "logistics",
-                                  size: 12.sp,
+                                  fontSize: 12.sp,
                                   color: const Color(0xffb4b4b0),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 ),
                                 SizedBox(
                                   height: 4.h,
                                 ),
                                 CustomText(
-                                  weight: FontWeight.w600,
+                                  fontWeight: FontWeight.w600,
                                   text: "ABC Transport Ltd",
-                                  size: 14.sp,
+                                  fontSize: 14.sp,
                                   color: const Color(0xff54565b),
-                                  align: TextAlign.center,
+                                  textAlign: TextAlign.center,
                                 )
                               ],
                             ),
@@ -216,29 +217,29 @@ class DispatchTile extends StatelessWidget {
                         Row(
                           children: [
                             CustomText(
-                                weight: FontWeight.w400,
+                                fontWeight: FontWeight.w400,
                                 text: 'No. of bags',
-                                size: 12.sp,
+                                fontSize: 12.sp,
                                 color: const Color(0xffb4b4b0),
-                                align: TextAlign.center),
+                                textAlign: TextAlign.center),
                             SizedBox(
                               width: 25.w,
                             ),
                             CustomText(
-                                weight: FontWeight.w400,
+                                fontWeight: FontWeight.w400,
                                 text: 'driver',
-                                size: 12.sp,
+                                fontSize: 12.sp,
                                 color: const Color(0xffb4b4b0),
-                                align: TextAlign.center),
+                                textAlign: TextAlign.center),
                             SizedBox(
                               width: 70.w,
                             ),
                             CustomText(
-                                weight: FontWeight.w400,
+                                fontWeight: FontWeight.w400,
                                 text: "driver-num",
-                                size: 12.sp,
+                                fontSize: 12.sp,
                                 color: const Color(0xffb4b4b0),
-                                align: TextAlign.center),
+                                textAlign: TextAlign.center),
                           ],
                         ),
                         SizedBox(
@@ -247,29 +248,29 @@ class DispatchTile extends StatelessWidget {
                         Row(
                           children: [
                             CustomText(
-                                weight: FontWeight.w600,
+                                fontWeight: FontWeight.w600,
                                 text: '300',
-                                size: 12.sp,
+                                fontSize: 12.sp,
                                 color: const Color(0xff54565b),
-                                align: TextAlign.center),
+                                textAlign: TextAlign.center),
                             SizedBox(
                               width: 69.w,
                             ),
                             CustomText(
-                                weight: FontWeight.w600,
+                                fontWeight: FontWeight.w600,
                                 text: 'Aminu Amusat',
-                                size: 12.sp,
+                                fontSize: 12.sp,
                                 color: const Color(0xff54565b),
-                                align: TextAlign.center),
+                                textAlign: TextAlign.center),
                             SizedBox(
                               width: 13.w,
                             ),
                             CustomText(
-                                weight: FontWeight.w600,
+                                fontWeight: FontWeight.w600,
                                 text: "07034524534",
-                                size: 12.sp,
+                                fontSize: 12.sp,
                                 color: const Color(0xff54565b),
-                                align: TextAlign.center),
+                                textAlign: TextAlign.center),
                           ],
                         )
                       ],
@@ -296,19 +297,19 @@ class DispatchTile extends StatelessWidget {
                   child: Row(
                     children: [
                       CustomText(
-                        weight: FontWeight.w400,
+                        fontWeight: FontWeight.w400,
                         text: "TUE 12 JAN, 2021 10:00AM",
-                        size: 8.sp,
+                        fontSize: 8.sp,
                         color: Colors.white,
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                       ),
                       const Spacer(),
                       CustomText(
-                        weight: FontWeight.w400,
+                        fontWeight: FontWeight.w400,
                         text: "ID: OTC-363-22573378487015320",
-                        size: 8.sp,
+                        fontSize: 8.sp,
                         color: Colors.white,
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                       ),
                     ],
                   ),

@@ -1,6 +1,7 @@
-import 'package:exercise/screen/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'custom_text.dart';
 
 class CommodityTile extends StatelessWidget {
   final String commodityName;
@@ -23,11 +24,11 @@ class CommodityTile extends StatelessWidget {
               width: 13.11.w,
             ),
             CustomText(
-              weight: FontWeight.w700,
+              fontWeight: FontWeight.w700,
               text: commodityName,
-              size: 12.sp,
+              fontSize: 12.sp,
               color: const Color(0xff8B908B),
-              align: TextAlign.start,
+              textAlign: TextAlign.start,
             )
           ],
         ),

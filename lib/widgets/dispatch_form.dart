@@ -1,8 +1,9 @@
 import 'package:exercise/screen/controller/dispatch.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
-import 'package:exercise/screen/widget/textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'custom_text.dart';
+import 'textfield.dart';
 
 class CustomTextFields extends StatelessWidget {
   final DispatchController controller;
@@ -22,21 +23,21 @@ class CustomTextFields extends StatelessWidget {
               Row(
                 children: [
                   CustomText(
-                    weight: FontWeight.w600,
+                    fontWeight: FontWeight.w600,
                     text: "*",
-                    size: 14.sp,
+                    fontSize: 14.sp,
                     color: const Color(0xffE1261C),
-                    align: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                   SizedBox(
                     width: 4.w,
                   ),
                   CustomText(
-                    weight: FontWeight.w400,
+                    fontWeight: FontWeight.w400,
                     text: "Log delivery details",
-                    size: 14.sp,
+                    fontSize: 14.sp,
                     color: const Color(0xff47494E),
-                    align: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),

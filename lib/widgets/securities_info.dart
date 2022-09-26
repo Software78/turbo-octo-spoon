@@ -1,8 +1,9 @@
-import 'package:exercise/screen/widget/commodity_tile.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
+import 'commodity_tile.dart';
+import 'custom_text.dart';
 
 class SecurityInfo extends StatelessWidget {
   SecurityInfo({Key? key}) : super(key: key);
@@ -66,11 +67,11 @@ class SecurityInfo extends StatelessWidget {
                     ),
                   )),
                   child: CustomText(
-                    weight: FontWeight.w500,
+                    fontWeight: FontWeight.w500,
                     text: "commodity-codes",
-                    size: 14.sp,
+                    fontSize: 14.sp,
                     color: const Color(0xff54565B),
-                    align: TextAlign.start,
+                    textAlign: TextAlign.start,
                   ),
                 ),
                 SizedBox(

@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
-import 'package:exercise/screen/widget/success_modal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../controller/dispatch.dart';
+import '../screen/controller/dispatch.dart';
+import 'custom_text.dart';
+import 'success_modal.dart';
 
 class SubmitModal extends StatelessWidget {
   final DispatchController controller;
@@ -31,21 +31,21 @@ class SubmitModal extends StatelessWidget {
             height: 14.h,
           ),
           CustomText(
-            weight: FontWeight.w700,
+            fontWeight: FontWeight.w700,
             text: "submit?",
-            size: 20.sp,
+            fontSize: 20.sp,
             color: const Color(0xff54565B),
-            align: TextAlign.center,
+            textAlign: TextAlign.center,
           ),
           SizedBox(
             height: 9.h,
           ),
           const CustomText(
-            weight: FontWeight.w400,
+            fontWeight: FontWeight.w400,
             text: "accept-delivery.",
-            size: 14,
+            fontSize: 14,
             color: Color(0xff7C827D),
-            align: TextAlign.center,
+            textAlign: TextAlign.center,
           ),
           SizedBox(
             height: 31.h,

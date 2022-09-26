@@ -1,8 +1,9 @@
 import 'package:exercise/screen/controller/dispatch.dart';
-import 'package:exercise/screen/view/stateless_view.dart';
-import 'package:exercise/screen/widget/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../mvc/mvc.dart';
+import 'custom_text.dart';
 
 class CustomTextField
     extends StatelessView<DispatchScreen, DispatchController> {
@@ -21,11 +22,11 @@ class CustomTextField
           filled: false,
           fillColor: const Color(0xffF2F2F2),
           label: CustomText(
-              weight: FontWeight.w400,
+              fontWeight: FontWeight.w400,
               text: labelText,
-              size: 12.sp,
+              fontSize: 12.sp,
               color: const Color(0xff47494E),
-              align: TextAlign.center),
+              textAlign: TextAlign.center),
           enabled: true,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),

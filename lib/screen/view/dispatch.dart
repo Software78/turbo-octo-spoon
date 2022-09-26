@@ -1,13 +1,13 @@
-import 'package:exercise/screen/view/stateless_view.dart';
-import 'package:exercise/screen/widget/dispatch_form.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../mvc/mvc.dart';
+import '../../widgets/custom_text.dart';
+import '../../widgets/dispatch_form.dart';
+import '../../widgets/dispatch_tile.dart';
+import '../../widgets/submit_modal.dart';
 import '../controller/dispatch.dart';
-import '../widget/custom_text.dart';
-import '../widget/dispatch_tile.dart';
-import '../widget/submit_modal.dart';
 
 class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
   const DispatchView(DispatchController state, {Key? key})
@@ -51,9 +51,9 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                   height: 50.h,
                   child: CustomText(
                     text: 'submit',
-                    align: TextAlign.center,
-                    weight: FontWeight.w700,
-                    size: 16.sp,
+                    textAlign: TextAlign.center,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 16.sp,
                     color: const Color(0xfff2f2f2),
                   ),
                 ),
@@ -99,9 +99,9 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                 SizedBox(width: 16.w),
                 CustomText(
                   text: 'OTC-363-22573378487015320',
-                  weight: FontWeight.w600,
-                  size: 14.sp,
-                  align: TextAlign.center,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14.sp,
+                  textAlign: TextAlign.center,
                   color: const Color(0xffc9c8c6),
                 )
               ],
@@ -176,8 +176,8 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                             child: CustomText(
                               text: 'log-dispatch',
                               color: const Color(0xfffff7f7),
-                              weight: FontWeight.w700,
-                              size: 16.sp,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16.sp,
                             ),
                           ),
                           const Spacer(),
@@ -197,18 +197,18 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CustomText(
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                         text: 'buyer',
                         color: const Color(0xff47494E),
-                        weight: FontWeight.w700,
-                        size: 12.sp,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 12.sp,
                       ),
                       CustomText(
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                         text: 'Dangote | 5000112353',
                         color: const Color(0xff47494E),
-                        weight: FontWeight.w400,
-                        size: 12.sp,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12.sp,
                       ),
                     ],
                   ),
@@ -217,18 +217,18 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CustomText(
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                         text: 'seller',
                         color: const Color(0xff47494E),
-                        weight: FontWeight.w700,
-                        size: 12.sp,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 12.sp,
                       ),
                       CustomText(
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                         text: 'Hybrid | 9900112234',
                         color: const Color(0xff47494E),
-                        weight: FontWeight.w400,
-                        size: 12.sp,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12.sp,
                       ),
                     ],
                   ),
@@ -237,18 +237,18 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CustomText(
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                         text: 'volume',
                         color: const Color(0xff47494E),
-                        weight: FontWeight.w700,
-                        size: 12.sp,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 12.sp,
                       ),
                       CustomText(
-                        align: TextAlign.center,
+                        textAlign: TextAlign.center,
                         text: '1000 MT',
                         color: const Color(0xff47494E),
-                        weight: FontWeight.w400,
-                        size: 12.sp,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12.sp,
                       ),
                     ],
                   ),
@@ -261,18 +261,18 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CustomText(
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           text: "buyer-price",
                           color: const Color(0xff47494E),
-                          weight: FontWeight.w700,
-                          size: 12.sp,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 12.sp,
                         ),
                         CustomText(
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           text: '280,000',
                           color: const Color(0xff47494E),
-                          weight: FontWeight.w400,
-                          size: 12.sp,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12.sp,
                         ),
                       ],
                     ),
@@ -285,18 +285,18 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CustomText(
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           text: "seller-price",
                           color: const Color(0xff47494E),
-                          weight: FontWeight.w700,
-                          size: 12.sp,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 12.sp,
                         ),
                         CustomText(
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           text: '250,000',
                           color: const Color(0xff47494E),
-                          weight: FontWeight.w400,
-                          size: 12.sp,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12.sp,
                         ),
                       ],
                     ),
@@ -309,18 +309,18 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         CustomText(
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           text: 'delivered-volume',
                           color: const Color(0xff47494E),
-                          weight: FontWeight.w700,
-                          size: 12.sp,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 12.sp,
                         ),
                         CustomText(
                           text: '0 / 1000',
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           color: const Color(0xff47494E),
-                          weight: FontWeight.w400,
-                          size: 12.sp,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12.sp,
                         ),
                       ],
                     ),
@@ -336,13 +336,13 @@ class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
                       ),
                       child: Center(
                         child: CustomText(
-                          align: TextAlign.center,
+                          textAlign: TextAlign.center,
                           text: controller.animationController.value == 0
                               ? 'view-more'
                               : 'collapse',
                           color: Colors.white,
-                          size: 12.sp,
-                          weight: FontWeight.w400,
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                     ),
