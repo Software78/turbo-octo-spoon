@@ -1,12 +1,12 @@
-import 'package:exercise/screen/controller/drawer.dart';
-import 'package:exercise/screen/controller/home.dart';
-import 'package:exercise/screen/view/history_page.dart';
+import 'package:exercise/views/drawer/history_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../mvc/mvc.dart';
 import '../../widgets/custom_text.dart';
 import '../../widgets/drawer.dart';
+import '../home/controller.dart';
+import 'controller.dart';
 
 class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
   const DrawerView(
@@ -65,18 +65,18 @@ class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             CustomText(
-                              fontWeight:  FontWeight.w400,
+                              fontWeight: FontWeight.w400,
                               text: "hey",
-                              fontSize:  14.42.sp,
+                              fontSize: 14.42.sp,
                               color: Colors.white,
-                             textAlign:  TextAlign.start,
+                              textAlign: TextAlign.start,
                             ),
                             CustomText(
-                              fontWeight:  FontWeight.w700,
+                              fontWeight: FontWeight.w700,
                               text: "Adamu",
-                              fontSize:  14.42.sp,
+                              fontSize: 14.42.sp,
                               color: Colors.white,
-                             textAlign:  TextAlign.start,
+                              textAlign: TextAlign.start,
                             ),
                           ],
                         ),
@@ -89,7 +89,7 @@ class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
                             text: 'You have',
                             style: TextStyle(
                               color: Colors.white,
-                              fontWeight:  FontWeight.w400,
+                              fontWeight: FontWeight.w400,
                               fontSize: 9.61.sp,
                             ),
                           ),
@@ -97,7 +97,7 @@ class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
                             text: ' 6',
                             style: TextStyle(
                               color: Colors.white,
-                              fontWeight:  FontWeight.w700,
+                              fontWeight: FontWeight.w700,
                               fontSize: 9.61.sp,
                             ),
                           ),
@@ -105,7 +105,7 @@ class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
                             text: ' trucks delivered today',
                             style: TextStyle(
                               color: Colors.white,
-                              fontWeight:  FontWeight.w400,
+                              fontWeight: FontWeight.w400,
                               fontSize: 9.61.sp,
                             ),
                           ),
@@ -152,11 +152,11 @@ class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
                         Image.asset("assets/images/book-saved.png"),
                         SizedBox(width: 10.w),
                         CustomText(
-                          fontWeight:  FontWeight.w500,
+                          fontWeight: FontWeight.w500,
                           text: "history",
-                          fontSize:  14.sp,
+                          fontSize: 14.sp,
                           color: const Color(0xffF2F2F2).withOpacity(0.8),
-                         textAlign:  TextAlign.center,
+                          textAlign: TextAlign.center,
                         )
                       ],
                     ),
@@ -172,18 +172,18 @@ class DrawerView extends StatelessView<DrawerChecks, DrawerChecksController> {
                       width: 10.w,
                     ),
                     CustomText(
-                      fontWeight:  FontWeight.w500,
+                      fontWeight: FontWeight.w500,
                       text: "logOut",
-                      fontSize:  14.sp,
+                      fontSize: 14.sp,
                       color: const Color(0xffF2F2F2).withOpacity(0.8),
-                     textAlign:  TextAlign.center,
+                      textAlign: TextAlign.center,
                     )
                   ],
                 )
               ],
             ),
           ),
-        ) 
+        )
     ]);
   }
 }

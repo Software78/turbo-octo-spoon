@@ -1,6 +1,7 @@
-import 'package:exercise/screen/controller/drawer.dart';
-import 'package:exercise/screen/view/home.dart';
 import 'package:flutter/material.dart';
+
+import '../../views/drawer/controller.dart';
+import 'view.dart';
 
 class HomeScreen extends StatefulWidget {
   final DrawerChecksController controller;

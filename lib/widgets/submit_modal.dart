@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../screen/controller/dispatch.dart';
+import '../views/dispatch/controller.dart';
 import 'custom_text.dart';
 import 'success_modal.dart';
 

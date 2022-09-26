@@ -7,7 +7,7 @@ import '../../widgets/custom_text.dart';
 import '../../widgets/dispatch_form.dart';
 import '../../widgets/dispatch_tile.dart';
 import '../../widgets/submit_modal.dart';
-import '../controller/dispatch.dart';
+import 'controller.dart';
 
 class DispatchView extends StatelessView<DispatchScreen, DispatchController> {
   const DispatchView(DispatchController state, {Key? key})

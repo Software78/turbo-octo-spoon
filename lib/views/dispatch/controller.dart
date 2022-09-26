@@ -1,6 +1,7 @@
-import 'package:exercise/screen/view/dispatch.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'view.dart';
 
 class DispatchScreen extends StatefulWidget {
   const DispatchScreen({Key? key}) : super(key: key);

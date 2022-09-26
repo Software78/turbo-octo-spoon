@@ -1,14 +1,14 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:exercise/screen/controller/dispatch.dart';
-import 'package:exercise/screen/controller/home.dart';
 import 'package:exercise/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../mvc/mvc.dart';
+import '../../views/dispatch/controller.dart';
 import '../../widgets/custom_text.dart';
 import '../../widgets/securities_info.dart';
+import 'controller.dart';
 
 class HomeView extends StatelessView<HomeScreen, HomeController> {
   // DrawerChecksController? controllers;

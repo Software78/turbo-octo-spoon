@@ -1,10 +1,10 @@
 import 'package:dotted_border/dotted_border.dart';
-import 'package:exercise/screen/controller/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../mvc/mvc.dart';
+import 'controller.dart';
 import '../../widgets/custom_text.dart';
 import '../../widgets/history_tile.dart';
 

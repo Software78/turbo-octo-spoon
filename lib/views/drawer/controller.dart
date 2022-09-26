@@ -1,5 +1,6 @@
-import 'package:exercise/screen/view/drawer.dart';
 import 'package:flutter/material.dart';
+
+import 'view.dart';
 
 class DrawerChecks extends StatefulWidget {
   const DrawerChecks({Key? key}) : super(key: key);
